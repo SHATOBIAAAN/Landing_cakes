@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+.tree-block {
+	height: 120vh;
+	background-size: cover; /* Изображение будет масштабировано так, чтобы его размеры полностью покрывали блок */
+	background-repeat: no-repeat; /* Изображение не будет повторяться */
+
+	background-image: url(/images/kim-daniels-OrkEasJeY74-unsplash1.png);
+	position: relative;
+	z-index: 1;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.treeblock-backimg {
+	position: absolute;
+	z-index: 0;
+
+	margin-top: -1000px;
+	margin-left: 950px;
+}
+.treeblock-h2 {
+	margin-top: 240px;
+	display: flex;
+	margin-left: 125px;
+	height: 25vh;
+	font-size: 100px;
+	font-family: 'Playfair Display';
+}
+.treeblock-list {
+	padding-left: 100px;
+	padding-top: 130px;
+}
+
+.treeblock-list {
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.treelist img {
+	float: none;
+	margin-top: -25px;
+	margin-right: 10px;
+}
+.treelist img {
+	float: left;
+	margin-right: 10px;
+}
+.treeblock-p {
+	margin-top: 20px;
+	display: flex;
+	margin-left: 125px;
+	height: 20vh;
+	font-family: 'Overpass';
+	font-size: 35px;
+}
+@media (max-width: 1200px) {
+	.tree-block {
+		margin-top: 2300px;
+	}
+	/* Добавьте или измените стили здесь. Например: */
+	.treeblock-h2 {
+		font-size: 50px; /* Уменьшаем размер шрифта */
+	}
+	.treeblock-p {
+		font-size: 20px; /* Уменьшаем размер шрифта */
+	}
+	.treeblock-backimg1 {
+		display: none;
+	}
+	.treeblock-backimg {
+		display: none; /* Убираем изображение */
+	}
+}
+@media (max-width: 800px) {
+	.tree-block {
+		margin-top: 2600px;
+
+		/* Добавляем изображение на задний фон */
+	}
+}
+@media (max-width: 925px) {
+	.tree-block {
+		margin-top: 1900px;
+
+		/* Добавляем изображение на задний фон */
+	}
+}
+
+@media (max-width: 770px) {
+	.tree-block {
+		margin-top: 2700px;
+
+		/* Добавляем изображение на задний фон */
+	}
+	.treeblock-backimg1 {
+		height: 180px;
+		display: flex; /* Делает контейнер гибким */
+		justify-content: center; /* Выравнивает содержимое по горизонтали */
+		align-items: center;
+	}
+	.treeblock-backimg {
+		display: none; /* Убираем изображение */
+	}
+
+	.treeblock-h2 {
+		margin-top: 10vh; /* Adjusted top margin for mobile */
+		font-size: 6vw; /* Responsive font size for mobile */
+	}
+
+	.treeblock-list {
+		padding: 5vh 0; /* Adjusted padding for mobile */
+	}
+
+	.treelist img {
+		margin-top: -2vh; /* Adjusted margin for mobile */
+		margin-right: 2vw; /* Adjusted margin for mobile */
+	}
+
+	.treeblock-p {
+		margin-top: 5vh; /* Adjusted top margin for mobile */
+		margin-left: 5vw; /* Adjusted left margin for mobile */
+		font-size: 4vw; /* Responsive font size for mobile */
+	}
+}
+@media (max-width: 690px) {
+	.tree-block {
+		margin-top: 1900px;
+	}
+	.treeblock-backimg {
+		display: none; /* Убираем изображение */
+	}
+
+	.treeblock-h2 {
+		margin-top: 10vh; /* Adjusted top margin for mobile */
+		font-size: 6vw; /* Responsive font size for mobile */
+	}
+
+	.treeblock-list {
+		padding: 5vh 0; /* Adjusted padding for mobile */
+	}
+
+	.treelist img {
+		margin-top: -2vh; /* Adjusted margin for mobile */
+		margin-right: 2vw; /* Adjusted margin for mobile */
+	}
+
+	.treeblock-p {
+		margin-top: 5vh; /* Adjusted top margin for mobile */
+		margin-left: 5vw; /* Adjusted left margin for mobile */
+		font-size: 4vw; /* Responsive font size for mobile */
+	}
+}
+
+.treeblock-backimg1 {
+	z-index: 3333;
+}
+@media (max-width: 690px) {
+	.tree-block {
+		margin-top: 2500px;
+	}
+}
+@media (max-width: 550px) {
+	.tree-block {
+		margin-top: 1900px;
+	}
+}
+@media (max-width: 380px) {
+	.tree-block {
+		margin-top: 1600px;
+	}
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+.two-block {
+	height: 180vh;
+	background-image: url('/images/image3.png');
+	background-size: cover; /* Изображение будет масштабировано так, чтобы его размеры полностью покрывали блок */
+	background-repeat: no-repeat; /* Изображение не будет повторяться */
+}
+
+.two-block-h1 {
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 15vh; /* Adjusted height for responsiveness */
+}
+
+.two-block-h1 h1 {
+	font-size: 8vw; /* Responsive font size */
+	font-family: 'Playfair Display', serif;
+}
+
+/* Media queries for mobile devices */
+
+.photo-cakes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 150px auto;
+	text-align: center;
+}
+
+.photo-cake h2 {
+	font-size: 2em;
+	margin: 1em;
+}
+
+.photo-cake p {
+	font-size: 1.5em;
+	margin: 1em;
+	font-family: 'Overpass';
+}
+
+.photo-cake {
+	flex: 0 0 calc(33.33% - 2em);
+	margin: 1em;
+	max-width: calc(33.33% - 2em);
+	border-radius: 50%;
+}
+
+.photo-cake img {
+	transition: transform 0.3s ease;
+}
+
+.photo-btn {
+	margin-bottom: 900px;
+	display: flex; /* Делает контейнер гибким */
+	justify-content: center; /* Выравнивает содержимое по горизонтали */
+	align-items: center; /* Выравнивает содержимое по вертикали */
+}
+body {
+	overflow-x: hidden; /* Убираем горизонтальный ползунок */
+}
+
+.photo-cake:hover img {
+	transform: scale(1.1);
+}
+@media (max-width: 1200px) {
+	.two-block-h1 {
+		margin-top: 120px; /* Изменяем отступ сверху */
+	}
+	.two-block-h1 h1 {
+		font-size: 60px; /* Увеличиваем размер шрифта */
+	}
+
+	.photo-btn {
+		margin-bottom: 800px!important;
+		display: flex; /* Делает контейнер гибким */
+		justify-content: center; /* Выравнивает содержимое по горизонтали */
+		align-items: center; /* Выравнивает содержимое по вертикали */
+	}
+
+	.btn-violet button {
+		margin-top: 20px;
+		
+		font-size: 18px;
+	}
+
+
+
+	.photo-cake h2 {
+		font-size: 1.5em;
+		justify-content: center; /* Выравнивает содержимое по горизонтали */
+		align-items: center; /* Увеличиваем размер шрифта */
+	}
+	.photo-cake img {
+		width: 80%;
+		justify-content: center; /* Выравнивает содержимое по горизонтали */
+		align-items: center; /* Уменьшаем ширину изображения */
+	}
+	.photo-cake p {
+		font-size: 1em; /* Увеличиваем размер шрифта */
+	}
+
+	.photo-cake {
+		flex: 0 0 50%;
+		justify-content: center; /* Выравнивает содержимое по горизонтали */
+		align-items: center; /* Меняем размер элемента */
+		max-width: 50%; /* Меняем максимальную ширину */
+	}
+}
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+	.two-block-h1 {
+		margin-top: 100px;
+	}
+	.two-block-h1 h1 {
+		font-size: 50px;
+	}
+
+	.photo-cakes {
+		flex-direction: column;
+		margin: 75px auto;
+	}
+
+	.photo-cake h2 {
+		font-size: 1em;
+	}
+	.photo-cake img {
+		width: 100%;
+	}
+	.photo-cake p {
+		font-size: 0.75em;
+	}
+
+	.photo-cake {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+body {
+	overflow-x: hidden;
+}
+@media (max-width: 1200px){
+    .photo-cakes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

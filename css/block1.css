@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.one-block {
+	max-height: 120vh;
+	background-size: cover; /* Изображение будет масштабировано так, чтобы его размеры полностью покрывали блок */
+	background-repeat: no-repeat; /* Изображение не будет повторяться */
+
+	background-image: url(/images/image1.png);
+}
+.header {
+	margin: 2% 4%;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.logo p {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.info-header a {
+	text-decoration: none;
+}
+
+.info-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 50px;
+	margin-left: 40%;
+}
+
+.info-header p {
+	font-size: 25px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+		margin: 5%;
+	}
+
+	.logo p {
+		margin-left: 0;
+	}
+
+	.info-header {
+		padding-top: 20px;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		gap: 20px;
+	}
+
+	.info-header p {
+		font-size: 18px;
+	}
+}
+.block-text-main {
+	display: block;
+	margin-top: 107px;
+	margin-left: 117px;
+	height: 360px;
+	width: 1222px;
+}
+
+.block-text-main h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 100px;
+}
+
+.block-text-main p {
+	font-size: 35px;
+	margin-top: 5px;
+}
+
+.block-btn-violet {
+	width: 500px;
+}
+
+.btn-violet button {
+	margin-left: 120px;
+	margin-top: 42px;
+	background-color: violet;
+	border-radius: 59px;
+	padding: 15px 10px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 25px;
+	transition: all 0.33s ease;
+}
+
+.btn-violet button:hover {
+	background-color: darkviolet; /* Меняем цвет при наведении */
+	transform: scale(1.2); /* Увеличиваем размер кнопки при наведении */
+}
+@media (max-width: 1200px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+		margin: 3%;
+	}
+
+	.logo p {
+		margin-left: 0;
+	}
+
+	.info-header {
+		padding-top: 20px;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		gap: 30px;
+	}
+
+	.info-header p {
+		font-size: 22px;
+	}
+
+	.block-text-main {
+		margin-top: 70px;
+		margin-left: 40px;
+		height: auto;
+		width: auto;
+	}
+
+	.block-text-main h1 {
+		font-size: 70px;
+	}
+
+	.block-text-main p {
+		font-size: 22px;
+	}
+
+	.block-btn-violet {
+		margin-left: 15px;
+	}
+
+	.btn-violet button {
+		margin-left: 20px;
+		margin-top: 30px;
+		padding: 12px 15px;
+		font-size: 22px;
+	}
+
+	.media-links {
+		margin-left: 40px !important;
+		margin-top: 40px;
+	}
+	.media-links p {
+		font-size: 22px;
+	}
+
+	.media-links img {
+		margin-top: 8px;
+	}
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+	.block-text-main {
+		margin-top: 50px;
+		margin-left: 20px;
+		height: auto;
+		width: auto;
+	}
+
+	.block-text-main h1 {
+		font-size: 50px;
+	}
+
+	.block-text-main p {
+		font-size: 18px;
+	}
+
+	.block-btn-violet {
+		width: auto;
+	}
+
+	.btn-violet button {
+		margin-left: 10px;
+		margin-top: 20px;
+		padding: 10px 15px;
+		font-size: 18px;
+	}
+}
+.media-links {
+    margin-left: 40px !important;
+    margin-top: 40px;
+}
+
+.media-links p {
+	font-size: 25px;
+}
+
+.media-links img {
+	margin-top: 10px;
+}
+
+.block-media-links {
+   margin-left: 80px;
+	display: flex;
+	width: 500px;
+}
+
+.media-links a img {
+	transition: filter 0.3s ease;
+}
+
+.media-links a:hover img {
+	filter: invert(50%);
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+	.block-text-main {
+		margin-top: 50px;
+		margin-left: 20px;
+		height: auto;
+		width: auto;
+	}
+
+	.block-text-main h1 {
+		font-size: 25px;
+        
+	}
+
+	.block-text-main p {
+		margin-top: 25px;
+		font-size: 16px;
+	}
+
+	.btn-violet {
+		display: flex; /* Делает контейнер гибким */
+		justify-content: center; /* Выравнивает содержимое по горизонтали */
+		align-items: center; /* Выравнивает содержимое по вертикали */
+	}
+
+	.btn-violet button {
+		margin-top: 20px;
+		padding: 10px 15px;
+		font-size: 16px;
+	}
+
+
+	.media-links p {
+		font-size: 18px;
+	}
+
+	.block-media-links {
+        margin-left: 0;
+		flex-direction: column;
+		height: auto;
+		width: auto;
+	}
+
+	.media-links img {
+		margin-top: 5px;
+	}
+}
+body {
+	overflow-x: hidden;
+}
