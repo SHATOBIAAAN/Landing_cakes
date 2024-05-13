@@ -34,19 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		var name = nameInput.value
 		var phone = phoneInput.value
 
-		fetch(
-			'https://api.telegram.org/bot7029577579:AAHpXCvjje-vwDDREH-cRlVPqSraFEL1uTU/sendMessage',
-			{
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({
-					chat_id: '6951152445',
-					text: 'Имя: ' + name + ', номер телефона: ' + phone,
-				}),
-			}
-		)
+		fetch('https://api.telegram.org/Tg_inf/sendMessage', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				chat_id: 'chat_id',
+				text: 'Имя: ' + name + ', номер телефона: ' + phone,
+			}),
+		})
 			.then(response => response.json())
 			.then(data => {
 				console.log(data)
